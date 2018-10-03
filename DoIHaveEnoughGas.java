@@ -1,3 +1,5 @@
+
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -13,7 +15,7 @@ import java.util.Scanner;
 public class DoIHaveEnoughGas {
     public static void main(String[]args ) {
         //set up our gass mpg
-        final int MAX_FUEL = 28;
+        final int MILES_PER_GALLON= 28;
         
         // declare double typpe variables
         double gasTank;
@@ -29,7 +31,7 @@ public class DoIHaveEnoughGas {
         System.out.println("How many miles to the next service station?");
         stationDistance = userInputScanner.nextDouble();
         // reading if the station distance is furthere than the max fuel
-        if(stationDistance < MAX_FUEL){
+        if(stationDistance < MILES_PER_GALLON * gasTank){
             System.out.println("Whew youll make it to the next station!");
             
         } else {
